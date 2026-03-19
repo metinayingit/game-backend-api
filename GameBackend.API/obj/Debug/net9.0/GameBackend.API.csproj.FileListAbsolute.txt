@@ -6,7 +6,9 @@ C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\GameBackend.API.runtimeconfig.json
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\GameBackend.API.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\GameBackend.API.pdb
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\BCrypt.Net-Next.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Humanizer.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -23,6 +25,12 @@ C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
@@ -37,6 +45,7 @@ C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\System.Composition.Hosting.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\metin\Desktop\GitHub\game-backend-api\GameBackend.API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
