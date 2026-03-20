@@ -9,7 +9,7 @@ namespace GameBackend.API.Models
         public int XP { get; set; } = 0;
         public int Coins { get; set; } = 0;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
+        public DateTime? LastDailyRewardClaim { get; set; }
 
         public ICollection<PlayerItem> Inventory { get; set; } = new List<PlayerItem>();
     }

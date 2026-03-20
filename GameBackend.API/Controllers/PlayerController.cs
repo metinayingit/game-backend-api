@@ -9,7 +9,7 @@ namespace GameBackend.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] // Requires JWT for all actions in this controller
+    [Authorize]
     public class PlayerController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -22,13 +22,11 @@ namespace GameBackend.API.Controllers
         [HttpGet("me")]
         public async Task<ActionResult<PlayerProfileDto>> GetMyProfile()
         {
-            // Get PlayerId from JWT Claim (Secure way)
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim == null) return Unauthorized();
 
             int playerId = int.Parse(userIdClaim.Value);
 
-            // Fetch player, include inventory and item details
             var player = await _context.Players
                 .Include(p => p.Inventory)
                 .ThenInclude(pi => pi.Item)
@@ -36,7 +34,6 @@ namespace GameBackend.API.Controllers
 
             if (player == null) return NotFound("Player not found.");
 
-            // Map Entity to DTO to avoid exposing PasswordHash
             var profileDto = new PlayerProfileDto
             {
                 Id = player.Id,
@@ -55,7 +52,7 @@ namespace GameBackend.API.Controllers
         }
 
         [HttpGet("leaderboard")]
-        [AllowAnonymous] // Anyone can see the leaderboard
+        [AllowAnonymous]
         public async Task<ActionResult> GetLeaderboard()
         {
             var topPlayers = await _context.Players
