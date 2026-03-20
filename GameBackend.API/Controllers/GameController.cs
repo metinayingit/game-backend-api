@@ -73,12 +73,12 @@ namespace GameBackend.API.Controllers
 
             return Ok(new
             {
-                Message = $"Tebrikler! {request.EnemyName} öldürüldü.",
+                Message = $"Congratulations! You killed {request.EnemyName}.",
                 GainedXP = request.BaseXpReward,
                 GainedCoins = request.BaseCoinReward,
                 LeveledUp = leveledUp,
                 CurrentLevel = player.Level,
-                DroppedItem = droppedItemName ?? "Hiçbir şey düşmedi"
+                DroppedItem = droppedItemName ?? "Nothing dropped"
             });
         }
 
@@ -91,12 +91,12 @@ namespace GameBackend.API.Controllers
             int playerId = int.Parse(userIdClaim.Value);
             var player = await _context.Players.FindAsync(playerId);
 
-            if (player == null) return NotFound();
+            if (player == null) return NotFound("Player not found.");
 
             if (player.LastDailyRewardClaim.HasValue && (DateTime.UtcNow - player.LastDailyRewardClaim.Value).TotalHours < 24)
             {
                 var hoursLeft = 24 - (DateTime.UtcNow - player.LastDailyRewardClaim.Value).TotalHours;
-                return BadRequest($"Sonraki ödül için {Math.Round(hoursLeft, 1)} saat beklemelisin.");
+                return BadRequest($"You must wait {Math.Round(hoursLeft, 1)} hours to claim your next reward.");
             }
 
             player.Coins += 500;
@@ -104,7 +104,7 @@ namespace GameBackend.API.Controllers
 
             await _context.SaveChangesAsync();
 
-            return Ok(new { Message = "Günlük ödül alındı! +500 Altın", CurrentCoins = player.Coins });
+            return Ok(new { Message = "Daily reward claimed! +500 Coins", CurrentCoins = player.Coins });
         }
     }
 }

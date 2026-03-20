@@ -29,13 +29,13 @@ namespace GameBackend.API.Controllers
                 .Include(p => p.Inventory)
                 .FirstOrDefaultAsync(p => p.Id == playerId);
 
-            if (player == null) return NotFound("Oyuncu bulunamadı.");
+            if (player == null) return NotFound("Player not found.");
 
             var inventoryItem = player.Inventory.FirstOrDefault(i => i.ItemId == itemId);
 
             if (inventoryItem == null || inventoryItem.Quantity <= 0)
             {
-                return BadRequest("Bu eşyaya çantanda sahip değilsin!");
+                return BadRequest("You do not have this item in your inventory!");
             }
 
             inventoryItem.Quantity--;
@@ -49,7 +49,7 @@ namespace GameBackend.API.Controllers
 
             return Ok(new
             {
-                Message = "Eşya başarıyla kullanıldı!",
+                Message = "Item successfully consumed!",
                 RemainingQuantity = inventoryItem.Quantity
             });
         }
