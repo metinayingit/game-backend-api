@@ -32,7 +32,7 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/metinayingit/game-backend-api.git](https://github.com/metinayingit/game-backend-api.git)
+    git clone https://github.com/metinayingit/game-backend-api.git
     cd game-backend-api/GameBackend.API
     ```
 
