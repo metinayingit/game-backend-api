@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\GameBackend.API.props" />
-</Project>
